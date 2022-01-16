@@ -66,4 +66,7 @@ sudo cp -r /etc/emulationstation/themes/carbon-2021 /opt/retropie/configs/all/em
 * You can use my [Retropie PCSX2 Wrapper](https://github.com/blcky05/retropie-pcsx2-wrapper), which will allow you to use your gamepad to close xcloud
 * Set-up `Retropie PCSX2 Wrapper` and configure your controller as described in the other repo
 * Modify the file `gamepad_wrapper.json` to add the xcloud system
-** TODO
+** Add the following line to "proc_names" (don't forget the `,` after the entry before):
+```
+"xbox-gamepass": "/opt/google/chrome/chrome"
+```
